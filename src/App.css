@@ -1,0 +1,361 @@
+main {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.header {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 24px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 700;
+  color: #34313d;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  color: #9e9aa7;
+  font-weight: 600;
+}
+
+.nav-actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.login-btn,
+.signup-btn {
+  border: none;
+  background: none;
+  font-weight: 600;
+}
+
+.login-btn {
+  color: #9e9aa7;
+}
+
+.signup-btn {
+  background-color: #2acfcf;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 999px;
+}
+
+.hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+
+.hero h1 {
+  font-size: 64px;
+  line-height: 1.05;
+  margin-bottom: 20px;
+  max-width: 650px;
+}
+
+.hero p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #9e9aa7;
+  max-width: 550px;
+}
+
+.get-started-btn {
+  margin-top: 28px;
+  border: none;
+  background-color: #2acfcf;
+  color: white;
+  padding: 14px 30px;
+  border-radius: 999px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.get-started-btn:hover {
+  background-color: #9be3e2;
+}
+
+.shortener-form-section {
+  max-width: 1200px;
+  margin: -28px auto 0;
+  padding: 0 24px 80px;
+}
+
+.shortener-form {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background-color: #3b3054;
+  border-radius: 18px;
+  padding: 52px 40px;
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="1440" height="120" viewBox="0 0 1440 120" fill="none"%3E%3Cpath d="M0 0H1440V120H0V0Z" fill="%233B3054"/%3E%3Cpath d="M0 0H1440V120H0V0Z" fill="url(%23paint0_linear_0_1)"/%3E%3Cdefs%3E%3ClinearGradient id="paint0_linear_0_1" x1="0" y1="0" x2="1440" y2="0" gradientUnits="userSpaceOnUse"%3E%3Cstop stop-color="%2323A6A6"/%3E%3Cstop offset="1" stop-color="%234F4F80"/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.shortener-form input {
+  flex: 1;
+  min-height: 64px;
+  border: 3px solid transparent;
+  border-radius: 12px;
+  padding: 0 22px;
+  font-size: 20px;
+  color: #34313d;
+  background-color: #ffffff;
+}
+
+.shortener-form input:focus {
+  outline: none;
+  border-color: #2acfcf;
+}
+
+.shortener-form input[aria-invalid='true'] {
+  border-color: #f46262;
+}
+
+.shortener-form button {
+  flex-shrink: 0;
+  min-width: 180px;
+  min-height: 64px;
+  border: none;
+  border-radius: 12px;
+  background-color: #2acfcf;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.shortener-form button:hover {
+  background-color: #9be3e2;
+}
+
+.shortener-form-section p[role='alert'] {
+  margin-top: 8px;
+  color: #f46262;
+  font-size: 16px;
+  font-style: italic;
+  padding-left: 6px;
+}
+
+.shortener-result {
+  margin-top: 20px;
+  background: #f8f7ff;
+  border: 1px solid #e4e1f0;
+  border-radius: 14px;
+  padding: 18px 20px;
+  color: #34313d;
+}
+
+.shortener-result p {
+  margin: 0;
+  word-break: break-word;
+}
+
+.shortener-result-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.copy-btn {
+  border: none;
+  background: #2acfcf;
+  color: white;
+  border-radius: 999px;
+  padding: 10px 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.copy-btn:hover {
+  background: #9be3e2;
+}
+
+.history-panel {
+  margin-top: 28px;
+  background: #ffffff;
+  border: 1px solid #e4e1f0;
+  border-radius: 16px;
+  padding: 20px 22px;
+  box-shadow: 0 12px 24px rgba(59, 48, 84, 0.08);
+}
+
+.history-panel h2 {
+  margin: 0 0 16px;
+  color: #34313d;
+  font-size: 1.3rem;
+}
+
+.history-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.history-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr) auto;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 16px;
+  border: 1px solid #ece8f5;
+  border-radius: 12px;
+  background: #f9f8ff;
+}
+
+.history-url-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.history-url-group a {
+  overflow-wrap: anywhere;
+  color: #34313d;
+}
+
+.history-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #9e9aa7;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.history-copy-btn {
+  min-width: 92px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding-top: 20px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: center;
+    order: 3;
+  }
+
+  .nav-actions {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .hero {
+    padding-bottom: 52px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+    max-width: 100%;
+  }
+
+  .hero p {
+    font-size: 18px;
+    max-width: 100%;
+  }
+
+  .shortener-form {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 24px 20px;
+  }
+
+  .shortener-form input,
+  .shortener-form button {
+    width: 100%;
+  }
+
+  .shortener-form button {
+    min-width: 0;
+  }
+
+  .shortener-form-section p[role='alert'] {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .shortener-result-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .copy-btn {
+    width: 100%;
+  }
+
+  .history-item {
+    grid-template-columns: 1fr;
+  }
+
+  .history-copy-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    justify-content: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav-actions {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .get-started-btn {
+    width: 100%;
+  }
+
+  .shortener-form-section {
+    padding: 0 16px 60px;
+  }
+
+  .shortener-form {
+    border-radius: 14px;
+  }
+
+  .shortener-form input {
+    min-height: 56px;
+    font-size: 18px;
+  }
+
+  .shortener-form button {
+    min-height: 56px;
+    font-size: 18px;
+  }
+}
