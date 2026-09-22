@@ -1,13 +1,13 @@
 /// <reference types="node" />
 
-export default async function handler(request: Request) {
-  if (request.method !== 'POST') {
-    return Response.json(
-      { error: 'Method not allowed.' },
-      { status: 405 },
-    )
-  }
+export async function GET() {
+  return Response.json(
+    { error: 'Method not allowed.' },
+    { status: 405 },
+  )
+}
 
+export async function POST(request: Request) {
   let body: { url?: string }
 
   try {
